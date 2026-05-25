@@ -1,4 +1,4 @@
-import 'package:atelerix/src/model/ping_model.dart';
+import 'package:atelerix_flutter/src/model/ping_model.dart';
 import 'package:flutter/material.dart';
 
 class AtelerixKeys extends ChangeNotifier {

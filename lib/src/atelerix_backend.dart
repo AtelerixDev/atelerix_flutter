@@ -1,5 +1,5 @@
-import 'package:atelerix/src/helper.dart';
-import 'package:atelerix/src/utils/enum/routes.dart';
+import 'package:atelerix_flutter/src/helper.dart';
+import 'package:atelerix_flutter/src/utils/enum/routes.dart';
 
 import 'atelerix_keys.dart';
 

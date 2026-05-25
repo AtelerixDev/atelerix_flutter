@@ -1,5 +1,6 @@
 import 'dart:developer';
-import 'package:atelerix/src/atelerix_keys.dart';
+
+import 'package:atelerix_flutter/src/atelerix_keys.dart';
 
 /// Logger utility for Atelerix plugin
 /// Provides debug logging functionality that respects the debug flag

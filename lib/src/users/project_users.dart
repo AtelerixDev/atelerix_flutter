@@ -1,7 +1,7 @@
-import 'package:atelerix/src/atelerix_backend.dart';
-import 'package:atelerix/src/atelerix_keys.dart';
-import 'package:atelerix/src/atelerix_package.dart';
-import 'package:atelerix/src/utils/enum/routes.dart';
+import 'package:atelerix_flutter/src/atelerix_backend.dart';
+import 'package:atelerix_flutter/src/atelerix_keys.dart';
+import 'package:atelerix_flutter/src/atelerix_package.dart';
+import 'package:atelerix_flutter/src/utils/enum/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 

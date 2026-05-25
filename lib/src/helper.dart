@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:atelerix/src/atelerix_keys.dart';
-import 'package:atelerix/src/utils/logger.dart';
+import 'package:atelerix_flutter/src/atelerix_keys.dart';
+import 'package:atelerix_flutter/src/utils/logger.dart';
 import 'package:dio/dio.dart';
 
 class AtelerixHelper {

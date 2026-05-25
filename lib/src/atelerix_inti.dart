@@ -2,15 +2,15 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:atelerix/atelerix_platform_interface.dart';
-import 'package:atelerix/src/atelerix_backend.dart';
-import 'package:atelerix/src/atelerix_keys.dart';
-import 'package:atelerix/src/atelerix_native.dart';
-import 'package:atelerix/src/atelerix_package.dart';
-import 'package:atelerix/src/model/ping_model.dart';
-import 'package:atelerix/src/users/project_users.dart';
-import 'package:atelerix/src/utils/enum/routes.dart';
-import 'package:atelerix/src/utils/logger.dart';
+import 'package:atelerix_flutter/atelerix_platform_interface.dart';
+import 'package:atelerix_flutter/src/atelerix_backend.dart';
+import 'package:atelerix_flutter/src/atelerix_keys.dart';
+import 'package:atelerix_flutter/src/atelerix_native.dart';
+import 'package:atelerix_flutter/src/atelerix_package.dart';
+import 'package:atelerix_flutter/src/model/ping_model.dart';
+import 'package:atelerix_flutter/src/users/project_users.dart';
+import 'package:atelerix_flutter/src/utils/enum/routes.dart';
+import 'package:atelerix_flutter/src/utils/logger.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 

@@ -1,14 +1,14 @@
 import 'dart:async';
 
-import 'package:atelerix/atelerix.dart';
-import 'package:atelerix/src/atelerix_inti.dart';
-import 'package:atelerix/src/atelerix_keys.dart';
-import 'package:atelerix/src/atelerix_native.dart';
-import 'package:atelerix/src/atelerix_package.dart';
-import 'package:atelerix/src/errors/errors_handler.dart';
-import 'package:atelerix/src/model/error_model.dart';
-import 'package:atelerix/src/notifications/notifications_handler.dart';
-import 'package:atelerix/src/users/project_users.dart';
+import 'package:atelerix_flutter/atelerix.dart';
+import 'package:atelerix_flutter/src/atelerix_inti.dart';
+import 'package:atelerix_flutter/src/atelerix_keys.dart';
+import 'package:atelerix_flutter/src/atelerix_native.dart';
+import 'package:atelerix_flutter/src/atelerix_package.dart';
+import 'package:atelerix_flutter/src/errors/errors_handler.dart';
+import 'package:atelerix_flutter/src/model/error_model.dart';
+import 'package:atelerix_flutter/src/notifications/notifications_handler.dart';
+import 'package:atelerix_flutter/src/users/project_users.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
