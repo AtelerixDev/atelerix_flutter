@@ -1,6 +1,6 @@
 name: atelerix_flutter
 description: "The official Flutter SDK for Atelerix — unified error tracking, analytics, push notifications, in-app messaging, and user feedback in a single integration."
-version: 0.0.1-beta.1
+version: 0.0.1-beta.2
 homepage: https://atelerix.dev
 
 environment:
