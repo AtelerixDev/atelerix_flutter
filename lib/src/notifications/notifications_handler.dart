@@ -115,22 +115,15 @@ class NotificationsManager extends ChangeNotifier {
       _isInitialized = true;
       // Step 3: Register device with Native plugin (Android only)
       try {
-          print("Here 3.1");
         final token = await AtelerixPlatform.instance.deviceToken();
-        print("Here 3");
         await register(token ?? "");
-        print("Here 4");
         _logger.logNormal("✅ Device registered with Native plugin");
       } catch (e) {
-        print("Here 3.2");
-        print("error: $e");
         _logger.logWarning("Device registration skipped (iOS): $e");
       }
 
       _logger.logNormal("✅ Notifications system initialized");
     } catch (e) {
-      print("Here 9");
-      print("error: $e");
       _logger.logError(
           "Failed to initialize notifications: $e", "NOTIF_INIT_ERROR");
       rethrow;
@@ -158,7 +151,6 @@ class NotificationsManager extends ChangeNotifier {
   /// Throws error if notifications not initialized
   void _ensureInitialized() {
     if (!_isInitialized) {
-      print("Here 7");
       throw StateError(
           'Notifications not initialized. Call await Atelerix.notifications.init() first');
     }
@@ -168,13 +160,10 @@ class NotificationsManager extends ChangeNotifier {
   ///
   /// Returns device token ID if successful, null otherwise
   Future<String?> register(String token) async {
-    print("Here 5");
     _ensureInitialized();
-    print("Here 6");
     try {
       // Step 1: Get device token from platform
       // _deviceToken = await AtelerixPlatform.instance.deviceToken();
-      print("Here 1");
       // Check cached token first
       // final cachedTokenNative = await _storage.read(key: _deviceTokenKey);
       // print("Here 2");
@@ -200,7 +189,6 @@ class NotificationsManager extends ChangeNotifier {
       notifyListeners();
 
       if (response != null && response['id'] != null) {
-        print("response: $response");
         _logger
             .logNormal("✅ Device registered with backend: ${response['id']}");
         return response['id'];
@@ -214,8 +202,6 @@ class NotificationsManager extends ChangeNotifier {
       _handlePlatformException(e);
       return null;
     } catch (e) {
-      print("Here 8");
-      print("error: $e");
       _logger.logError("Unexpected error: $e", "ERR_NOTIF_UNKNOWN");
       return null;
     }

@@ -2,7 +2,6 @@ import 'package:atelerix/atelerix.dart';
 import 'package:flutter/material.dart';
 
 void main() {
- 
   Atelerix.init(
     url: "http://api.atelerix.dev",
     apiKey: "API_KEY",
@@ -34,11 +33,10 @@ class _MyAppState extends State<MyApp> {
   Future<void> _checkUserRegistration() async {
     await Atelerix.notifications.init();
     final deviceToken = await Atelerix.notifications.deviceToken;
+    Atelerix.notifications.init();
     setState(() {
       _userId = Atelerix.getUserId();
     });
-
- 
 
     // Request notification permissions
     final granted = await Atelerix.notifications.requestPermissions();
@@ -51,10 +49,8 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    Atelerix.notifications.setOnNotificationReceived((data) {
-    });
-    Atelerix.notifications.setOnNotificationTapped((data) {
-    });
+    Atelerix.notifications.setOnNotificationReceived((data) {});
+    Atelerix.notifications.setOnNotificationTapped((data) {});
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
