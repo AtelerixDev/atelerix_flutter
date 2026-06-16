@@ -26,7 +26,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  atelerix: ^lastest_version
+  atelerix_flutter: ^lastest_version
 ```
 
 Then run:
@@ -49,7 +49,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   Atelerix.init(
-    url: "https://api.atelerix.com",
+    url: "https://api.atelerix.dev/v1/",
     apiKey: "YOUR_API_KEY",
     projectId: "YOUR_PROJECT_ID",
     builder: () async {
